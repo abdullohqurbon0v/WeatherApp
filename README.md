@@ -17,7 +17,7 @@ Welcome to **Weather Dashboard**, a stunning and interactive weather application
 
 ## 🚀 Demo
 
-Check out the live demo [here](#) (replace with your deployed URL if available).  
+Check out the live demo [here](https://weather-app-one-rosy-19.vercel.app/) (replace with your deployed URL if available).  
 Here’s a sneak peek:
 
 ---
