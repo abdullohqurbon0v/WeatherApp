@@ -1,8 +1,5 @@
 # 🌦️ Weather Dashboard
 
-![Weather Dashboard Banner](https://via.placeholder.com/1200x400.png?text=Weather+Dashboard)  
-_Real-time weather insights at your fingertips!_
-
 Welcome to **Weather Dashboard**, a stunning and interactive weather application built with modern web technologies. Whether you're checking the forecast for your current location or exploring weather conditions worldwide, this app delivers a seamless experience with a dynamic, weather-responsive design.
 
 ---
@@ -84,8 +81,13 @@ Follow these steps to get the Weather Dashboard running locally:
 
 ## 🎨 Usage
 
-- **Initial Prompt**: React framework for server-side rendering and static site generation.
-- **TypeScript**: Strongly-typed JavaScript for better developer experience.
-- **Tailwind CSS**: Utility-first CSS framework for a stunning, responsive UI.
-- **OpenWeather API**: Reliable weather data source.
-- **React Icons**: Weather-themed icons for an enhanced visual experience.
+- **Initial Prompt**: On first load, the app asks for geolocation permission. Click "Yes" to use your current location or "No" to proceed with the default city (Moscow).
+- **Search**: Enter any city name in the search bar and hit "Search" to get weather details.
+- **Location Button**: Click "Use My Location" to fetch weather based on your current coordinates.
+- **Explore**: Scroll through current conditions, detailed info, 5-day forecast, and hourly updates.
+
+## 🌟 Highlights
+
+- **Geolocation Retry**: If you deny location access, the app politely asks again before falling back to manual input.
+- **Weather Icons**: Beautiful icons from react-icons match the current conditions.
+- **Smooth Transitions**: Theme changes animate smoothly with a 500ms transition.
