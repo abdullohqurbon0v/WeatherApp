@@ -10,8 +10,6 @@ import {
   WiFog,
   WiThunderstorm,
 } from "react-icons/wi";
-
-// Типы для данных OpenWeather API
 interface WeatherData {
   name: string;
   main: {
@@ -56,7 +54,7 @@ interface ForecastData {
 }
 
 export default function WeatherApp() {
-  const [city, setCity] = useState<string>("Moscow");
+  const [city, setCity] = useState<string>("Tashkent");
   const [weatherData, setWeatherData] = useState<WeatherData | null>(null);
   const [forecastData, setForecastData] = useState<ForecastData | null>(null);
   const [loading, setLoading] = useState<boolean>(false);
@@ -66,7 +64,7 @@ export default function WeatherApp() {
   );
   const [showGeoPrompt, setShowGeoPrompt] = useState<boolean>(true);
 
-  const API_KEY = "bfdac86e7d2ea81c96a089837d3a75e2";
+  const API_KEY = process.env.NEXT_PUBLIC_OPENWEATHER_API_KEY;
   const WEATHER_API = coords
     ? `https://api.openweathermap.org/data/2.5/weather?lat=${coords.lat}&lon=${coords.lon}&units=metric&appid=${API_KEY}`
     : `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${API_KEY}`;
